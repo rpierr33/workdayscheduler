@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+
+      <div class="row" id="row-1">
+
+          <div class="col-1 border border-left-0 border-dark " id="row1col1">
+            <p>9 AM</p> 
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom  " id="row1col2">
+            <input class="form-control" type="text" id="row1col2input" placeholder="Sample task" /> 
+          </div>
+          <div class="col-1 bg-info   rounded-right " id="row1col3">
+            <button type="button" id="row1col3btn" class="btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+
+      </div>
+
+    <!--Second row-->
+      <div class="row " id="row-2">
+          <div class="col-1 border border-left-0 border-dark " id="row2col1">
+            <p>10 AM</p>
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom " id="row2col2">
+            <input class="form-control" type="text" id="row2col2input" placeholder="Sample task" />
+          </div>
+          <div class="col-1 bg-info   rounded-right" id="row2col3">
+            <button type="button" id="row2col3btn" class=" btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+      </div>
+
+    <!--Third row-->
+      <div class="row" id="row-3">
+          <div class="col-1 border border-left-0 border-dark " id="row3col1">
+            <p>11 AM</p>
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom " id="row3col2">
+            <input class="form-control" type="text" id="row3col2input" placeholder="Sample task" />
+          </div>
+          <div class="col-1 bg-info  rounded-right" id="row3col3">
+            <button type="button" id="row3col3btn" class=" btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+      </div>
+
+    <!--Fourth row-->
+      <div class="row" id="row-4">
+          <div class="col-1 border border-left-0 border-dark " id="row4col1">
+            <p>12 PM</p>
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom " id="row4col2">
+            <input class="form-control" type="text" id="row4col2input" placeholder="Sample task" />
+          </div>
+          <div class="col-1 bg-info  rounded-right" id="row4col3">
+            <button type="button" id="row4col3btn"  class=" btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+      </div>
+
+    <!--Fifth row-->
+      <div class="row" id="row-5">
+          <div class="col-1 border border-left-0 border-dark " id="row5col1">
+            <p>1 PM</p>
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom " id="row5col2">
+            <input class="form-control" type="text" id="row5col2input" placeholder="Sample task" />
+          </div>
+          <div class="col-1 bg-info  rounded-right" id="row5col3">
+            <button type="button" id="row5col3btn" class=" btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+      </div>
+
+
+    <!--Sixth row-->
+      <div class="row" id="row-6">
+          <div class="col-1 border border-left-0 border-dark " id="row6col1">
+            <p>2 PM</p>
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom " id="row6col2">
+            <input class="form-control" type="text" id="row6col2input" placeholder="Sample task" />
+          </div>
+          <div class="col-1 bg-info  rounded-right" id="row6col3">
+            <button type="button" id="row6col3btn"  class=" btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+      </div>
+
+    <!--Seventh row-->
+        <div class="row" id="row-7">
+          <div class="col-1 border border-left-0 border-dark " id="row7col1">
+            <p>3 PM</p>
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom " id="row7col2">
+            <input class="form-control" type="text" id="row7col2input" placeholder="Sample task" />
+          </div>
+          <div class="col-1 bg-info  rounded-right" id="row7col3">
+            <button type="button" id="row7col3btn"  class=" btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+      </div>  
+
+        <!--Eight row-->
+        <div class="row" id="row-8">
+          <div class="col-1 border border-left-0 border-dark " id="row8col1">
+            <p>4 PM</p>
+          </div>
+          <div class="col-10 border border-lighter border-top border-bottom " id="row8col2">
+            <input class="form-control" type="text" id="row8col2input" placeholder="Sample task" />
+          </div>
+          <div class="col-1 bg-info  rounded-right" id="row8col3">
+            <button type="button" id="row8col3btn"  class=" btn-light saveBtn"><span class="oi oi-hard-drive"></span></button>
+          </div>
+      </div> 
+
+
+
+
+
+    </div>
+    <!--original scripts-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--add touch punch here-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
